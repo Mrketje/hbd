@@ -1,0 +1,81 @@
+body {
+    background-color: #2c2c2c; /* Warna latar belakang gelap yang lembut */
+    color: #f9f9f9; /* Warna teks lembut */
+    font-family: 'Poppins', sans-serif; /* Font untuk teks */
+    text-align: center; /* Rata tengah */
+    padding: 20px; /* Ruang di sekitar konten */
+}
+
+.container {
+    max-width: 1000px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px;
+    border-radius: 15px; /* Sudut melingkar */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Bayangan yang lembut */
+    background-color: #3a3a3a; /* Warna latar belakang kontainer */
+    border: 2px solid #ff6f61; /* Border manis */
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive; /* Font untuk judul */
+    font-size: 2.8em; /* Ukuran font judul */
+    margin-bottom: 15px; /* Ruang bawah judul */
+    color: #ff6f61; /* Warna judul yang cerah */
+}
+
+p {
+    font-size: 1.3em; /* Ukuran font untuk paragraf */
+    margin-bottom: 20px; /* Ruang bawah paragraf */
+    line-height: 1.5; /* Jarak antar baris */
+}
+
+button {
+    padding: 10px 20px; /* Ruang dalam tombol */
+    font-size: 1.2em; /* Ukuran font tombol */
+    color: #ffffff; /* Warna teks tombol */
+    background-color: #ff6f61; /* Warna latar belakang tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 25px; /* Sudut melingkar pada tombol */
+    cursor: pointer; /* Kursor tangan saat hover */
+    transition: background-color 0.3s, transform 0.3s; /* Transisi warna dan efek */
+}
+
+button:hover {
+    background-color: #ff4d4d; /* Warna saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+.gallery {
+    display: flex; /* Flexbox untuk galeri */
+    justify-content: center; /* Pusatkan gambar */
+    margin-top: 20px; /* Ruang atas galeri */
+    opacity: 0; /* Mulai dengan transparan */
+    animation: fadeIn 1s forwards; /* Animasi saat muncul */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Transparan */
+    }
+    to {
+        opacity: 1; /* Tidak transparan */
+    }
+}
+
+.gallery img {
+    width: 120px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis */
+    margin: 0 10px; /* Ruang di antara gambar */
+    border-radius: 15px; /* Sudut melingkar pada gambar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan gambar */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transisi saat hover */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Membesar saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat hover */
+}
+
+.hidden {
+    display: none; /* Menyembunyikan elemen */
+}
